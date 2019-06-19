@@ -7,18 +7,26 @@ namespace App\ShiftGearModule\Domain;
 use App\SharedKernel\Domain\AggregateRoot;
 use App\ShiftGearModule\Domain\Event\GearIncreased;
 use App\ShiftGearModule\Domain\Event\GearReduced;
+use App\ShiftGearModule\Domain\Exception\GearCanNotBeIncreased;
 
 final class ShiftGear extends AggregateRoot
 {
 	private $id;
+	private $currentGear;
 
-	public function __construct(ShiftGearId $id)
+	public function __construct(ShiftGearId $id, CurrentGear $currentGear)
 	{
-		$this->id = $id;
+		$this->id          = $id;
+		$this->currentGear = $currentGear;
 	}
 
 	public function higherGear(): void
 	{
+		if ($this->currentGear->isMaximum())
+		{
+			throw GearCanNotBeIncreased::whenMaximumHasBeenReached($this->id);
+		}
+
 		$this->record(new GearIncreased($this->id));
 	}
 
