@@ -8,6 +8,7 @@ use App\SharedKernel\Domain\AggregateRoot;
 use App\ShiftGearModule\Domain\Event\GearIncreased;
 use App\ShiftGearModule\Domain\Event\GearReduced;
 use App\ShiftGearModule\Domain\Exception\GearCanNotBeIncreased;
+use App\ShiftGearModule\Domain\Exception\GearCanNotBeReduced;
 
 final class ShiftGear extends AggregateRoot
 {
@@ -32,6 +33,11 @@ final class ShiftGear extends AggregateRoot
 
 	public function reduceGear(): void
 	{
+		if ($this->currentGear->isFirst())
+		{
+			throw GearCanNotBeReduced::whenCurrentIsFirst($this->id);
+		}
+
 		$this->record(new GearReduced($this->id));
 	}
 }

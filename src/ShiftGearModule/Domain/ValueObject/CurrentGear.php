@@ -6,13 +6,18 @@ namespace App\ShiftGearModule\Domain;
 
 final class CurrentGear
 {
-	private $gear;
 	private $maximumGear;
+	private $gear;
 
-	public function __construct(int $gear, int $maximumGear)
+	public function __construct(int $maximumGear, int $gear = 1)
 	{
 		$this->maximumGear = $maximumGear;
 		$this->gear        = $gear;
+	}
+
+	public function isFirst(): bool
+	{
+		return 1 === $this->gear;
 	}
 
 	public function isMaximum(): bool
