@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ShiftGearModule\Api;
+namespace App\ShiftGearModule\Api;
 
 
 interface ShiftGearApi
