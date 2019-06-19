@@ -7,7 +7,7 @@ namespace App\EngineModule\Domain\Event;
 use App\EngineModule\Domain\EngineId;
 use App\SharedKernel\Domain\DomainEvent;
 
-final class EngineWasTurnedOff implements DomainEvent
+final class EngineTurnedOff implements DomainEvent
 {
 	private $engineId;
 

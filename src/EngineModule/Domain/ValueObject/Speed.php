@@ -6,10 +6,17 @@ namespace App\EngineModule\Domain\ValueObject;
 
 final class Speed
 {
+	private const INITIAL_SPEED = 750;
+
 	private $value;
 
 	public function __construct(int $value)
 	{
 		$this->value = $value;
+	}
+
+	public static function initial(): self
+	{
+		return new self(self::INITIAL_SPEED);
 	}
 }
