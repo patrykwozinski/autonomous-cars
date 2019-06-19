@@ -6,5 +6,4 @@ namespace App\ShiftGearModule\Domain;
 
 final class ShiftGear
 {
-
 }
