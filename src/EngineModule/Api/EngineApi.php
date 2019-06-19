@@ -6,5 +6,7 @@ namespace App\EngineModule\Api;
 
 interface EngineApi
 {
-	public function increasePower(): void;
+	public function start(string $engineId): void;
+
+	public function turnOff(string $engineId): void;
 }

@@ -6,6 +6,7 @@ namespace App\ShiftGearModule\Api;
 
 interface ShiftGearApi
 {
-	public function higherGear(): void;
-	public function reduceGear(): void;
+	public function higherGear(string $shiftGearId): void;
+
+	public function reduceGear(string $shiftGearId): void;
 }
