@@ -9,4 +9,8 @@ interface EngineApi
 	public function start(string $engineId): void;
 
 	public function turnOff(string $engineId): void;
+
+	public function increaseSpeed(): void;
+
+	public function decreaseSpeed(): void;
 }
