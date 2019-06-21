@@ -19,4 +19,14 @@ final class Speed
 	{
 		return new self(self::INITIAL_SPEED);
 	}
+
+	public function increase(): self
+	{
+		return new self(++$this->value);
+	}
+
+	public function decrease(): self
+	{
+		return new self(--$this->value);
+	}
 }

@@ -33,4 +33,14 @@ final class Engine extends AggregateRoot
 
 		$this->record(new EngineTurnedOff($this->id));
 	}
+
+	public function increaseSpeed(): void
+	{
+		$this->speed = $this->speed->increase();
+	}
+
+	public function decreaseSpeed(): void
+	{
+		$this->speed = $this->speed->decrease();
+	}
 }
