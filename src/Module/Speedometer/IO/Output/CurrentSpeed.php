@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Module\Speedometer\Main\Application\Query\CurrentSpeed;
+namespace App\Module\Speedometer\IO\Output;
 
 
-final class CurrentSpeedReadModel
+final class CurrentSpeed
 {
 	private $value;
 
