@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Application\Command\Start;
+namespace App\Module\Engine\Main\Application\Command\TurnOff;
 
 
-use App\EngineModule\Domain\EngineId;
+use App\Module\Engine\Main\Domain\EngineId;
 
-final class StartCommand
+final class TurnOffCommand
 {
 	private $engineId;
 

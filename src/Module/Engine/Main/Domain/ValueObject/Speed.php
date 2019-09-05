@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Domain\ValueObject;
+namespace App\Module\Engine\Main\Domain\ValueObject;
 
 
-use App\EngineModule\Domain\Exception\CannotChangeEngineSpeed;
+use App\Module\Engine\Main\Domain\Exception\CannotChangeEngineSpeed;
 
 final class Speed
 {

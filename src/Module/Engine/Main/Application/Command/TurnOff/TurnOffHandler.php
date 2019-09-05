@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Application\Command\TurnOff;
+namespace App\Module\Engine\Main\Application\Command\TurnOff;
 
 
-use App\EngineModule\Domain\Engines;
+use App\Module\Engine\Main\Domain\Engines;
 
 final class TurnOffHandler
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Api;
+namespace App\Module\Engine\Api;
 
 
 interface EngineApi

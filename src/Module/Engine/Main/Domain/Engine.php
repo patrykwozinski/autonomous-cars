@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Domain;
+namespace App\Module\Engine\Main\Domain;
 
 
-use App\EngineModule\Domain\Event\EngineStarted;
-use App\EngineModule\Domain\Event\EngineTurnedOff;
-use App\EngineModule\Domain\ValueObject\Speed;
-use App\SharedKernel\Domain\AggregateRoot;
+use App\Module\Engine\Main\Domain\Event\EngineStarted;
+use App\Module\Engine\Main\Domain\Event\EngineTurnedOff;
+use App\Module\Engine\Main\Domain\ValueObject\Speed;
+use App\Module\SharedKernel\Domain\AggregateRoot;
 
 final class Engine extends AggregateRoot
 {

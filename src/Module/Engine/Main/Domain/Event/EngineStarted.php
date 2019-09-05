@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Domain\Event;
+namespace App\Module\Engine\Main\Domain\Event;
 
 
-use App\EngineModule\Domain\EngineId;
-use App\SharedKernel\Domain\DomainEvent;
+use App\Module\Engine\Main\Domain\EngineId;
+use App\Module\SharedKernel\Domain\DomainEvent;
 
 final class EngineStarted implements DomainEvent
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\EngineModule\Domain;
+namespace App\Module\Engine\Main\Domain;
 
 
 interface Engines
