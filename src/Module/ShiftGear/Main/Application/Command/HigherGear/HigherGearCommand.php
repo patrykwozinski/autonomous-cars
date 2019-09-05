@@ -8,6 +8,7 @@ use App\Module\ShiftGear\Main\Domain\ShiftGearId;
 
 final class HigherGearCommand
 {
+	/** @var ShiftGearId */
 	private $shiftGearId;
 
 	public function __construct(string $shiftGearId)

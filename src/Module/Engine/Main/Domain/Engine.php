@@ -11,7 +11,9 @@ use App\Module\SharedKernel\Domain\AggregateRoot;
 
 final class Engine extends AggregateRoot
 {
+	/** @var EngineId */
 	private $id;
+	/** @var Speed */
 	private $speed;
 
 	public function __construct(EngineId $id, Speed $speed)

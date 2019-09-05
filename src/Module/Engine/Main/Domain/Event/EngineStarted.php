@@ -9,6 +9,7 @@ use App\Module\SharedKernel\Domain\DomainEvent;
 
 final class EngineStarted implements DomainEvent
 {
+	/** @var EngineId */
 	private $engineId;
 
 	public function __construct(EngineId $engineId)

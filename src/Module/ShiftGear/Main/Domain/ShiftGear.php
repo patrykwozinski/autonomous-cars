@@ -12,7 +12,9 @@ use App\Module\ShiftGear\Main\Domain\Exception\GearCanNotBeReduced;
 
 final class ShiftGear extends AggregateRoot
 {
+	/** @var ShiftGearId */
 	private $id;
+	/** @var CurrentGear */
 	private $currentGear;
 
 	public function __construct(ShiftGearId $id, CurrentGear $currentGear)

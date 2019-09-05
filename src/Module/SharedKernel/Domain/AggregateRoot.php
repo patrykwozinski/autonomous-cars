@@ -6,6 +6,7 @@ namespace App\Module\SharedKernel\Domain;
 
 abstract class AggregateRoot
 {
+	/** @var DomainEvent[] */
 	private $events = [];
 
 	final public function pullEvents(): array

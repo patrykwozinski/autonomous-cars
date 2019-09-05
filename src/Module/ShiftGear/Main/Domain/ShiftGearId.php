@@ -6,6 +6,7 @@ namespace App\Module\ShiftGear\Main\Domain;
 
 final class ShiftGearId
 {
+	/** @var string */
 	private $id;
 
 	private function __construct(string $id)

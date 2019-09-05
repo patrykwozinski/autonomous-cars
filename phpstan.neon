@@ -2,3 +2,9 @@ parameters:
     level: max
     paths:
         - %currentWorkingDirectory%/src
+    classesAllowedToBeExtended:
+        - App\Module\SharedKernel\Domain\AggregateRoot
+        - DomainException
+        - LogicException
+        - InvalidArgumentException
+        - RuntimeException

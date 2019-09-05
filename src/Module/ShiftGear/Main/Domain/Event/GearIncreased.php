@@ -9,6 +9,7 @@ use App\Module\ShiftGear\Main\Domain\ShiftGearId;
 
 final class GearIncreased implements DomainEvent
 {
+	/** @var ShiftGearId */
 	private $shiftGearId;
 
 	public function __construct(ShiftGearId $shiftGearId)

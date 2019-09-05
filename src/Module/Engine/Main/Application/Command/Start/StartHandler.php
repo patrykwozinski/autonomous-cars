@@ -8,6 +8,7 @@ use App\Module\Engine\Main\Domain\Engines;
 
 final class StartHandler
 {
+	/** @var Engines */
 	private $engines;
 
 	public function __construct(Engines $engines)

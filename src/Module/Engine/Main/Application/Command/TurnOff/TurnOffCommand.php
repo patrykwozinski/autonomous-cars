@@ -8,6 +8,7 @@ use App\Module\Engine\Main\Domain\EngineId;
 
 final class TurnOffCommand
 {
+	/** @var EngineId */
 	private $engineId;
 
 	public function __construct(string $engineId)

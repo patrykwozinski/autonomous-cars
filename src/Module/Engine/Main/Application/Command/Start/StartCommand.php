@@ -8,6 +8,7 @@ use App\Module\Engine\Main\Domain\EngineId;
 
 final class StartCommand
 {
+	/** @var EngineId */
 	private $engineId;
 
 	public function __construct(string $engineId)

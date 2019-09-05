@@ -6,6 +6,7 @@ namespace App\Module\Engine\Main\Domain;
 
 final class EngineId
 {
+	/** @var string */
 	private $id;
 
 	private function __construct(string $id)

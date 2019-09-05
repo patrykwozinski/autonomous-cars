@@ -8,6 +8,7 @@ use App\Module\ShiftGear\Main\Domain\ShiftGears;
 
 final class ReduceGearHandler
 {
+	/** @var ShiftGears */
 	private $shiftGears;
 
 	public function __construct(ShiftGears $shiftGears)
