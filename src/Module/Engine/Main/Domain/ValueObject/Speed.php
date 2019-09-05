@@ -10,6 +10,7 @@ final class Speed
 {
 	private const INITIAL_SPEED = 750;
 
+	/** @var int */
 	private $value;
 
 	public function __construct(int $value)
