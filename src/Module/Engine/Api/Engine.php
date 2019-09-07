@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace App\Module\Engine\Api;
 
 
-interface EngineApi
+interface Engine
 {
 	public function start(string $engineId): void;
 

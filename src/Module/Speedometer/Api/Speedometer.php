@@ -6,7 +6,7 @@ namespace App\Module\Speedometer\Api;
 
 use App\Module\Speedometer\IO\Output\CurrentSpeed;
 
-interface SpeedometerApi
+interface Speedometer
 {
 	public function currentSpeed(string $speedometerId): CurrentSpeed;
 }

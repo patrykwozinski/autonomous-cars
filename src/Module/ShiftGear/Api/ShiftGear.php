@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace App\Module\ShiftGear\Api;
 
 
-interface ShiftGearApi
+interface ShiftGear
 {
 	public function higherGear(string $shiftGearId): void;
 
